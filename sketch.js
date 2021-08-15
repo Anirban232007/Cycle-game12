@@ -130,7 +130,7 @@ function draw() {
   
     path.velocityX = 0;
     mainCyclist.velocityY = 0;
-    mainCyclist.changeAnimation("SahilRunning",mainRacerImg2);
+    mainCyclist.addAnimation("SahilRunning",mainRacerImg2);
   
     pinkCG.setVelocityXEach(0);
     pinkCG.setLifetimeEach(-1);
@@ -183,7 +183,7 @@ function reset(){
   redCG.destroyEach()
   yellowCG.destroyEach()
   distance=0
-  mainCyclist.changeAnimation("SahilRunning",mainRacerImg1)
+  mainCyclist.addAnimation("SahilRunning",mainRacerImg1)
   gameState=PLAY
 }
 
